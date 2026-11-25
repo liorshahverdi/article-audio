@@ -1,0 +1,19 @@
+[project]
+name = "article-audio"
+version = "0.1.0"
+description = "Paste a link to any article or blog post and listen to it, using natural-sounding local text-to-speech (Kokoro)."
+readme = "README.md"
+license = "MIT"
+authors = [{ name = "Lior Shahverdi" }]
+requires-python = ">=3.12"
+dependencies = [
+    "fastapi>=0.165.0",
+    "httpx>=0.28.1",
+    "kokoro-onnx>=0.6.1",
+    "lameenc>=1.9.0",
+    "trafilatura>=2.4.0",
+    "uvicorn[standard]>=0.54.0",
+]
+
+[tool.uv]
+package = false
